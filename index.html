@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* background: transparent; */
+            background-image: url('images/catPhoto.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+        h1{
+            color:limegreen;
+            text-align: center;
+            text-decoration: underline;
+            text-decoration-color: black;
+            text-decoration-thickness:1px ;
+        }
+        button{
+            border-radius: 8px;
+            padding: 6px;
+            width: 70px;
+            border: 1px solid black;
+            margin-left: 20px;
+            
+        }
+        #likebtn{
+            background-color: rgb(255, 51, 15);
+            color: whitesmoke;
+        }
+        #sharebtn{
+            background-color:aqua;
+        }
+        #commentbtn{
+            background-color: chartreuse;
+
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        #likebtn:active{
+            background-color: rgb(209, 35, 35);
+        }
+        #sharebtn:active{
+            background-color: rgb(24, 197, 197);
+        }
+        #commentbtn:active{
+            background-color: rgb(112, 190, 34);
+        }
+
+        #sendbtn{
+            background-color: blue;
+            color: whitesmoke;
+        }
+        #sendbtn:active{
+            background-color: rgb(14, 14, 100);
+        }
+        #paybtn{
+            background-color: yellow;
+        }
+        #paybtn:active{
+            background-color: rgb(146, 146, 0);
+        }
+        .formdiv{
+            background: transparent;
+            border: 1px solid black;
+            border-radius: 12px;
+            backdrop-filter: blur(50px);
+
+            /* backdrop-filter: blur(20px); */
+            display: inline-block;
+            position: relative;
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            left:10%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CAT HOME-SHELTER</h1>
+   <!--  <img src="images/catPhoto.jpg" alt="cat-image"> -->
+    <h2 >What cat likes:</h2>
+
+        <ul>
+            <li>fish</li>
+            <li>sleep</li>
+
+        </ul>
+    <h2>What cat hates:</h2>
+    <ul>
+        <li>water</li>
+        <li>dogs</li>
+    </ul>
+    <button type="button" id="likebtn" >like</button>
+    <button type="button" id="sharebtn">share</button>
+    <button type="button" id="commentbtn">comment</button>
+    <br><br>
+    <h3>Register To Save Cats</h3>
+    
+    <div class="formdiv">
+        <form >
+            <label>Name:&nbsp;<input placeholder="e.g John Doe" type="text" required="true"></label>
+            <br><br>
+            <label>Phone:<input placeholder="07********"  min="10"  type="number" required="true"></label>
+            <br><br>
+            <label>Email:<input placeholder="johndoe@gmail.com" type="email" required="true"></label>
+            <br><br>
+            <textarea required="true" placeholder="send us a message" name="message" id="message" cols="30" rows="10"></textarea>
+            <br><br>
+            <button type="submit" id="sendbtn">Send</button>
+        </form>
+    </div>
+    <h3>Donate To Fund Cat Shelter</h3>
+    <section>
+        <h5>Select Payment Option</h5>
+        <label for="mpesa">M-PESA<input name="pay" type="radio"></label>
+        <label for="visa">VISA<input name="pay" type="radio"></label>
+        <label for="mastercard">MasterCard<input name="pay" type="radio"></label>
+        <br><br>
+        <button type="button" id="paybtn">PAY</button>
+    </section>
+
+    <h4>&copy;2024 norald ltd.All Right Reserved</h4>
+</body>
+</html>
